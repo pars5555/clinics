@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^admin/login/?$  /dyn/admin/main/$1/?page=login [L,QSA]
+RewriteRule ^admin/?$  /dyn/admin/main/$1/?page=home [L,QSA]
+RewriteRule ^admin/home/?$  /dyn/admin/main/$1/?page=home [L,QSA]
+RewriteRule ^admin/groups/?$  /dyn/admin/main/$1/?page=groups [L,QSA]
+RewriteRule ^admin/admins/?$  /dyn/admin/main/$1/?page=admins [L,QSA]
+RewriteRule ^admin/users/?$  /dyn/admin/main/$1/?page=users [L,QSA]
+RewriteRule ^admin/gtimeline/?$  /dyn/admin/main/$1/?page=gtimeline [L,QSA]
+RewriteRule ^admin/optimeline/?$  /dyn/admin/main/$1/?page=optimeline [L,QSA]
+RewriteRule ^admin/usertimeline/?$  /dyn/admin/main/$1/?page=usersTimeline [L,QSA]
+RewriteRule ^admin/publication/?$  /dyn/admin/main/$1/?page=publication [L,QSA]
+RewriteRule ^admin/background/?$  /dyn/admin/main/$1/?page=background [L,QSA]
+
+RewriteRule ^dentist/login/?$  /dyn/dentist/main/$1/?page=login [L,QSA]
+RewriteRule ^dentist/?$  /dyn/dentist/main/$1/?page=home [L,QSA]
+RewriteRule ^dentist/home/?$  /dyn/dentist/main/$1/?page=home [L,QSA]
+RewriteRule ^dentist/calendar/?$  /dyn/dentist/main/$1/?page=calendar [L,QSA]
+
+RewriteRule ^clinic/login/?$  /dyn/clinic/main/$1/?page=login [L,QSA]
+RewriteRule ^clinic/?$  /dyn/clinic/main/$1/?page=home [L,QSA]
+RewriteRule ^clinic/home/?$  /dyn/clinic/main/$1/?page=home [L,QSA]
+
+
+RewriteRule ^/?$ /dyn/main/main [L,QSA] 
+RewriteRule ^dyn(/.+)?/?$ /index1.php?_url=$1 [L,QSA]
